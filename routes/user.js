@@ -33,5 +33,11 @@ router.get('/me', auth, getUserController)
 router.post('/login', login)
 router.post('/logout', auth,logout)
 
+router.get('/notes',(req,res) => {
+    res.status(400).json({
+        message: "message Successfully"
+    })
+})
+
 
 module.exports = router
